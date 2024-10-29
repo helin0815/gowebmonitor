@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/apolloconfig/agollo/v4"
+	agl "github.com/apolloconfig/agollo/v4"
 	"os"
 
 	"github.com/apolloconfig/agollo/v4/env/config"
@@ -58,8 +58,8 @@ func NewApolloWithMeta() (ConfigCenter, error) {
 }
 
 func (c *ApolloConfig) Run() error {
-	agollo.SetLogger(log.SugaredLogger())
-	client, err := agollo.StartWithConfig(c.appConfigLoader)
+	agl.SetLogger(log.SugaredLogger())
+	client, err := agl.StartWithConfig(c.appConfigLoader)
 	if err != nil {
 		return fmt.Errorf("error starting apollo client: %v", err)
 	}
