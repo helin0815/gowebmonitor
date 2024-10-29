@@ -4,6 +4,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
+	lsego "github.com/helin0815/gowebmonitor"
 	"github.com/helin0815/gowebmonitor/pkg/log"
 )
 

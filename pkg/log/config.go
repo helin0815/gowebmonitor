@@ -14,9 +14,9 @@ import (
 const (
 	defaultScheme = "llog"
 
-	AppName        = "CHJ_APP_NAME"
+	AppName        = "TEST_APP_NAME"
 	LogBase        = "LOG_BASE"
-	LogBaseDefault = "/chj/data/log/"
+	LogBaseDefault = "/data/log/"
 )
 
 func init() {

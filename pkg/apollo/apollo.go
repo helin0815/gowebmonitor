@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/apolloconfig/agollo/v4"
 	"os"
 
 	"github.com/apolloconfig/agollo/v4/env/config"
@@ -14,7 +15,7 @@ import (
 )
 
 var (
-	defaultConfigServerURLTemplate = "http://configserver-%s.chj.cloud"
+	defaultConfigServerURLTemplate = "http://github.%s.com"
 )
 
 type ApolloConfig struct {
